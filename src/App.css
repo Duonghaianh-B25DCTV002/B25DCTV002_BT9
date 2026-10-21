@@ -1,0 +1,166 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+.app {
+  min-height: 100vh;
+  padding: 20px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.app.light {
+  background-color: #f5f5f5;
+  color: #333;
+}
+
+.app.dark {
+  background-color: #1a1a2e;
+  color: #eee;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  padding-bottom: 15px;
+  border-bottom: 2px solid #ddd;
+}
+
+.app.dark header {
+  border-bottom-color: #444;
+}
+
+header h1 {
+  font-size: 24px;
+}
+
+header button {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  background-color: #4a90d9;
+  color: white;
+}
+
+header button:hover {
+  background-color: #357abd;
+}
+
+h2 {
+  margin-bottom: 15px;
+  font-size: 20px;
+}
+
+.search-input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+.app.dark .search-input {
+  background-color: #16213e;
+  border-color: #444;
+  color: #eee;
+}
+
+.form {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 15px;
+  flex-wrap: wrap;
+}
+
+.form input {
+  flex: 1;
+  min-width: 120px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+.app.dark .form input {
+  background-color: #16213e;
+  border-color: #444;
+  color: #eee;
+}
+
+.form button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  background-color: #27ae60;
+  color: white;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.form button:hover {
+  background-color: #219a52;
+}
+
+.form-error {
+  color: #e74c3c;
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+thead {
+  background-color: #4a90d9;
+  color: white;
+}
+
+th, td {
+  padding: 10px 15px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.app.dark th, .app.dark td {
+  border-bottom-color: #444;
+}
+
+tbody tr:hover {
+  background-color: rgba(74, 144, 217, 0.1);
+}
+
+.btn-delete {
+  padding: 6px 14px;
+  border: none;
+  border-radius: 4px;
+  background-color: #e74c3c;
+  color: white;
+  cursor: pointer;
+  font-size: 13px;
+}
+
+.btn-delete:hover {
+  background-color: #c0392b;
+}
+
+.status {
+  text-align: center;
+  padding: 20px;
+  font-size: 16px;
+}
+
+.status.error {
+  color: #e74c3c;
+}
